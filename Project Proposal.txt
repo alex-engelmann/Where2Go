@@ -11,15 +11,18 @@
 	
 need to sketch still
 	
+	- NewTech -
+
+	-Sass
 
  	- apis to be used -
 
- 	- Uber API
+ 	- Open Weather API
  	- Yelp API
 
  	- rough breakdown of tasks -
 	
-	jim: HTML layout and materialize, 
+	jim: HTML layout, Materialize,Sass, Firebase
 
 	alex: Yelp API,
 
