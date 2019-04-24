@@ -12,3 +12,6 @@ var res = XHR2.send("GET", url + "?latitude="+lat+"&longitude="+lng, {
 });
 // response
 response.success(res, "application/json");
+
+
+//https://api.uber.com/v1.2/products?access_token=<TOKEN>&latitude=XXX&longitude=XXX
