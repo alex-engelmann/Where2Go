@@ -3,11 +3,14 @@
 We will make a web page that uses:
 
  - Materialize css
- - Uber API
+ - OpenWeather API
  - Yelp API
  - JQUERY
  
-Users will make a request (providing locale, and selecting from an event that gets populated)
-After selecting an event, a request will be made to aproximate the cost of ubering to the event.
+ Upon loading (if a request has been made in the last five days) populate 5 day forcast with dates/days
+ events for each day will be shown for the corresponding days as well. 
+ Users will make a request, and the results will populate the current and next four day weather forcast 
+ and corresponding events for that day (limit 3).
+
 
 

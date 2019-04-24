@@ -5,18 +5,148 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <!-- css -->
+    <!-- Google Icon Font -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Materialize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Sass -->
+
+    <!-- Font Awesome (icons) -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- Custom css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Where2Go</title>
 </head>
 
 <body>
+    <!-- Navbar -->
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo center">Where2Go</a>
+        </div>
+    </nav>
+    <br><br>
+    <div class="container">
+        <!-- Make a new search here. -->
+        <div class="row">
+            <div class="col s12 m6">
+                <h3>Make a new search</h3>
+            </div>
+            <form class="col s12 m6">
+                <div class="row">
+                    <div class="input-field col s12 m6">
+                        <i class="material-icons edit_location"></i>
+                        <input id="zipcode" type="text" class="validate">
+                        <label for="zipcode">Zipcode</label>
+                    </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Display: Current weather for next five days -->
+    <div class="row">
+        <!-- Each card represents one day -->
+        <div class="card col m6 s12">
+            <div class="card-image waves-effect waves-block waves-light">
+                <!-- image can be of top 1st event -->
+                <img class="activator"
+                    src="https://media.npr.org/assets/img/2011/07/07/gettyimages_85052759_wide-91b7876ce2cf4c8e755f18d033027881cb1e72b6-s800-c85.jpg">
+            </div>
+            <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4"><i class="fas fa-sun"></i>Day of Week and
+                    Temp<i class="material-icons right">more_vert</i></span>
+                <p><a href="#">Sac Rave</a></p>
+            </div>
+            <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Rave<i class="material-icons right">close</i></span>
+                <p>Here is some more information about this product that is only revealed once clicked on.</p>
+            </div>
+        </div>
+        <div class="card col m6 s12">
+            <div class="card-image waves-effect waves-block waves-light">
+                <!-- image can be of top 1st event -->
+                <img class="activator"
+                    src="https://media.npr.org/assets/img/2011/07/07/gettyimages_85052759_wide-91b7876ce2cf4c8e755f18d033027881cb1e72b6-s800-c85.jpg">
+            </div>
+            <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4"><i class="fas fa-sun"></i>Day of Week and
+                    Temp<i class="material-icons right">more_vert</i></span>
+                <p><a href="#">Sac Rave</a></p>
+            </div>
+            <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Rave<i class="material-icons right">close</i></span>
+                <p>Here is some more information about this product that is only revealed once clicked on.</p>
+            </div>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="card col m6 s12">
+            <div class="card-image waves-effect waves-block waves-light">
+                <!-- image can be of top 1st event -->
+                <img class="activator"
+                    src="https://media.npr.org/assets/img/2011/07/07/gettyimages_85052759_wide-91b7876ce2cf4c8e755f18d033027881cb1e72b6-s800-c85.jpg">
+            </div>
+            <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4"><i class="fas fa-sun"></i>Day of Week and
+                    Temp<i class="material-icons right">more_vert</i></span>
+                <p><a href="#">Sac Rave</a></p>
+            </div>
+            <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Rave<i class="material-icons right">close</i></span>
+                <p>Here is some more information about this product that is only revealed once clicked on.</p>
+            </div>
+        </div>
+        <div class="card col m6 s12">
+            <div class="card-image waves-effect waves-block waves-light">
+                <!-- image can be of top 1st event -->
+                <img class="activator"
+                    src="https://media.npr.org/assets/img/2011/07/07/gettyimages_85052759_wide-91b7876ce2cf4c8e755f18d033027881cb1e72b6-s800-c85.jpg">
+            </div>
+            <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4"><i class="fas fa-sun"></i>Day of Week and
+                    Temp<i class="material-icons right">more_vert</i></span>
+                <p><a href="#">Sac Rave</a></p>
+            </div>
+            <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Rave<i class="material-icons right">close</i></span>
+                <p>Here is some more information about this product that is only revealed once clicked on.</p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="card col m6 s12">
+            <div class="card-image waves-effect waves-block waves-light">
+                <!-- image can be of top 1st event -->
+                <img class="activator"
+                    src="https://media.npr.org/assets/img/2011/07/07/gettyimages_85052759_wide-91b7876ce2cf4c8e755f18d033027881cb1e72b6-s800-c85.jpg">
+            </div>
+            <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4"><i class="fas fa-sun"></i>Day of Week and
+                    Temp<i class="material-icons right">more_vert</i></span>
+                <p><a href="#">Sac Rave</a></p>
+            </div>
+            <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Rave<i class="material-icons right">close</i></span>
+                <p>Here is some more information about this product that is only revealed once clicked on.</p>
+            </div>
+        </div>
+    </div>
 
 
-
-
-
+    <!-- Javascript -->
+    <!-- Materialize -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- JQUERY -->
     <script src="https://code.jquery.com/jquery-3.4.0.js"
         integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo=" crossorigin="anonymous"></script>
-    <script src="assets/javascript/uber.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/javascript/main.js"></script>
+    <!-- Weather API -->
+    <script src="assets/javascript/openweather.js"></script>
+    <!-- Yelp API -->
     <Script src="assets/javascript/yelp.js"></Script>
 </body>
 
