@@ -1,0 +1,27 @@
+ 	- project title -
+
+	where2go
+
+ 	- project description -
+
+	Users will make a request (providing locale, and selecting from an event that gets populated)
+	After selecting an event, a request will be made to aproximate the cost of ubering to the event.
+
+ 	- sketch of final product -
+
+	
+
+ 	- apis to be used -
+
+ 	- Uber API
+ 	- Yelp API
+
+ 	- rough breakdown of tasks -
+	
+	jim: HTML layout and materialize, 
+
+	alex: Yelp API,
+
+	liam: Uber API,
+
+
