@@ -1,0 +1,13 @@
+	- - Where2Go - -
+
+We will make a web page that uses:
+
+ - Materialize css
+ - Uber API
+ - Yelp API
+ - JQUERY
+ 
+Users will make a request (providing locale, and selecting from an event that gets populated)
+After selecting an event, a request will be made to aproximate the cost of ubering to the event.
+
+
