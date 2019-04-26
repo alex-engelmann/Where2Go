@@ -9,7 +9,7 @@ We will make a web page that uses:
  
  Upon loading (if a request has been made in the last five days) populate 5 day forcast with dates/days
  events for each day will be shown for the corresponding days as well. 
- Users will make a request, and the results will populate the current and next four day weather forcast 
+ Users will make a request, and the results will populate the current and next four day weather forecast 
  and corresponding events for that day (limit 3).
 
 
