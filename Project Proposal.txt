@@ -28,4 +28,19 @@ need to sketch still
 
 	liam: Uber API,
 
+	- Target Audience - 
+	- A person looking for a local event.
+	
+	- problem addressed - 
+	- finding a local event in the near future that is appropriate for the weather.
+
+	- primary goal - 
+	- providing basic info on local events.
+	
+	- user stories -
+ 	- if im gonna use the app, i wanna be able to change the location of my search if im out of town.
+	- as a user i want a simple streamlined format cause im busy.
+	- i want a visual representation of the weather because it will help me be more efficient in my search!
+
+
 
