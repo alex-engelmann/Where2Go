@@ -12,14 +12,11 @@ var getEvents = function () {
     const proxyUrl = "https://cors-anywhere.herokuapp.com/";
     var queryUrl = "https://api.yelp.com/v3/events?location=" + place;
 
-    $.ajaxSetup({
-        beforeSend: function (xhr) {
-            { xhr.setRequestHeader("Authorization", "Bearer " + apiKey) };
-        }
-    });
-
     //Make the Yelp Fusion API call
     $.ajax({
+        beforeSend: function (xhr) {
+        xhr.setRequestHeader("Authorization", "Bearer " + apiKey)},
+        
         url: proxyUrl + queryUrl,
         method: "GET"
     }).then(function (response) {
