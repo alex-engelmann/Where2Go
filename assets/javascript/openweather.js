@@ -4,10 +4,10 @@ var zipcode;
 var queryURL = "https://api.openweathermap.org/data/2.5/forecast/daily?zip=" + zipcode + "&cnt=7&APPID=166a433c57516f51dfab1f7edaed8413"
 
 
-function appendThings(info) {
-    newImg = $("<img src=" + info[2] + ">")
-    $("#event-1-name").append(newImg)
-}
+// function appendThings(info) {
+//     newImg = $("<img src=" + info[2] + ">")
+//     $("#current-date").append(newImg)
+// }
 
 
 
@@ -20,7 +20,6 @@ function weather(queryURL) {
         .then(function (response) {
 
             console.log(response)
-            console.log("*****************")
 
             // arrays represent days of weather, [0] = temperature, [1] = weather description, [2] = weather icon, [3] = day of the week
             let day1 = [response.list[0].temp.day, response.list[0].weather[0].main, "http://openweathermap.org/img/w/" + response.list[0].weather[0].icon + ".png", moment.unix(response.list[0].dt).format("dddd")]
@@ -31,14 +30,50 @@ function weather(queryURL) {
             let day6 = [response.list[5].temp.day, response.list[5].weather[0].main, "http://openweathermap.org/img/w/" + response.list[5].weather[0].icon + ".png", moment.unix(response.list[5].dt).format("dddd")]
             let day7 = [response.list[6].temp.day, response.list[6].weather[0].main, "http://openweathermap.org/img/w/" + response.list[6].weather[0].icon + ".png", moment.unix(response.list[6].dt).format("dddd")]
 
-            console.log(day1)
-            console.log(day2)
-            console.log(day3)
-            console.log(day4)
-            console.log(day5)
-            console.log(day6)
-            console.log(day7)
-            appendThings(day1)
+
+            var newImg = $("<img src=" + day1[2] + ">")
+            $("#current-date").text(day1[3] + " " + Math.floor(day1[0]) + String.fromCharCode(176))
+            $("#current-date").append(newImg)
+            console.log(newImg)
+
+            var newImg = $("<img src=" + day2[2] + ">")
+            $("#current-date1").text(day2[3] + " " + Math.floor(day2[0]) + String.fromCharCode(176))
+            $("#current-date1").append(newImg)
+            console.log(newImg)
+
+            var newImg = $("<img src=" + day3[2] + ">")
+            $("#current-date2").text(day3[3] + " " + Math.floor(day3[0]) + String.fromCharCode(176))
+            $("#current-date2").append(newImg)
+            console.log(newImg)
+
+            var newImg = $("<img src=" + day4[2] + ">")
+            $("#current-date3").text(day4[3] + " " + Math.floor(day4[0]) + String.fromCharCode(176))
+            $("#current-date3").append(newImg)
+            console.log(newImg)
+
+            var newImg = $("<img src=" + day5[2] + ">")
+            $("#current-date4").text(day5[3] + " " + Math.floor(day5[0]) + String.fromCharCode(176))
+            $("#current-date4").append(newImg)
+            console.log(newImg)
+
+            var newImg = $("<img src=" + day6[2] + ">")
+            $("#current-date5").text(day6[3] + " " + Math.floor(day6[0]) + String.fromCharCode(176))
+            $("#current-date5").append(newImg)
+            console.log(newImg)
+
+            var newImg = $("<img src=" + day7[2] + ">")
+            $("#current-date6").text(day7[3] + " " + Math.floor(day7[0]) + String.fromCharCode(176))
+            $("#current-date6").append(newImg)
+            console.log(newImg)
+
+            // console.log(day1)
+            // console.log(day2)
+            // console.log(day3)
+            // console.log(day4)
+            // console.log(day5)
+            // console.log(day6)
+            // console.log(day7)
+            // appendThings(day1)
         });
 }
 
