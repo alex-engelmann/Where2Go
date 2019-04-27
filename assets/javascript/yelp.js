@@ -2,6 +2,11 @@
 
 var getEvents = function () {
 
+    //Find out today's date
+
+    
+    console.log(moment().format('l'));
+
     //Get location from user
     var place = $("#zipcode").val();
     console.log(place);
