@@ -3,7 +3,6 @@
 var zipcode;
 var queryURL = "https://api.openweathermap.org/data/2.5/forecast/daily?zip=" + zipcode + "&cnt=5&APPID=166a433c57516f51dfab1f7edaed8413"
 
-console.log(moment.unix(1556740800).format("dddd"))
 
 function weather(queryURL) {
     $.ajax({
