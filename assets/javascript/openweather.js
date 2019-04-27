@@ -1,7 +1,7 @@
 //api key = 166a433c57516f51dfab1f7edaed8413
 //api.openweathermap.org/data/2.5/forecast/daily?lat={lat}&lon={lon}&cnt={cnt}
 var zipcode;
-var queryURL = "https://api.openweathermap.org/data/2.5/forecast/daily?zip=" + zipcode + "&cnt=7&APPID=166a433c57516f51dfab1f7edaed8413"
+var queryURL = "https://api.openweathermap.org/data/2.5/forecast/daily?zip=" + zipcode + "&cnt=5&APPID=166a433c57516f51dfab1f7edaed8413"
 
 
 function weather(queryURL) {
