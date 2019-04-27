@@ -12,7 +12,7 @@ function weather(queryURL) {
         // We store all of the retrieved data inside of an object called "response"
         .then(function (response) {
 
-            console.log(response)
+            // console.log(response)
 
             // arrays represent days of weather, [0] = temperature, [1] = weather description, [2] = weather icon, [3] = day of the week
             let day1 = [response.list[0].temp.day, response.list[0].weather[0].main, "http://openweathermap.org/img/w/" + response.list[0].weather[0].icon + ".png", moment.unix(response.list[0].dt).format("dddd")]
