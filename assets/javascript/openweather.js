@@ -4,6 +4,13 @@ var zipcode;
 var queryURL = "https://api.openweathermap.org/data/2.5/forecast/daily?zip=" + zipcode + "&cnt=7&APPID=166a433c57516f51dfab1f7edaed8413"
 
 
+function appendThings(info) {
+    newImg = $("<img src=" + info[2] + ">")
+    $("#event-1-name").append(newImg)
+}
+
+
+
 function weather(queryURL) {
     $.ajax({
         url: queryURL,
@@ -23,7 +30,7 @@ function weather(queryURL) {
             let day5 = [response.list[4].temp.day, response.list[4].weather[0].main, "http://openweathermap.org/img/w/" + response.list[4].weather[0].icon + ".png", moment.unix(response.list[4].dt).format("dddd")]
             let day6 = [response.list[5].temp.day, response.list[5].weather[0].main, "http://openweathermap.org/img/w/" + response.list[5].weather[0].icon + ".png", moment.unix(response.list[5].dt).format("dddd")]
             let day7 = [response.list[6].temp.day, response.list[6].weather[0].main, "http://openweathermap.org/img/w/" + response.list[6].weather[0].icon + ".png", moment.unix(response.list[6].dt).format("dddd")]
-            
+
             console.log(day1)
             console.log(day2)
             console.log(day3)
@@ -31,7 +38,7 @@ function weather(queryURL) {
             console.log(day5)
             console.log(day6)
             console.log(day7)
-
+            appendThings(day1)
         });
 }
 
