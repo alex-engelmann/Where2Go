@@ -4,7 +4,6 @@ var getEvents = function () {
 
     //Find out today's date
 
-    
     console.log(moment().format('l'));
     var startUnixTime = moment().unix();
     var endUnixTime = startUnixTime + 604800;
@@ -12,7 +11,7 @@ var getEvents = function () {
     console.log("unix time: " + startUnixTime);
 
     //Get location from user
-    var place = $("#zipcode").val();
+    var place = $("#search").val();
     console.log(place);
 
 
