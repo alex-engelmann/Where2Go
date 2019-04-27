@@ -27,115 +27,213 @@
             <a href="#" class="brand-logo center">Where2Go</a>
         </div>
     </nav>
-    <br><br>
+    <br>
+    <!-- search bar / landing page -->
+    
+
+    <!-- Display: Current weather for next seven days -->
     <div class="container">
-        <!-- Make a new search here. -->
         <div class="row">
-            <div class="col s12 m6">
-                <h3>Make a new search</h3>
+            <div class="col sm12 m6">
+                <h3 id="current-date">Current Date</h3>
+                <ul class="collapsible" id="events-date">
+                    <li>
+                        <div class="collapsible-header" id="event-1-name">
+                            <!--insert icon here--><i class="material-icons">filter_drama</i>First Event Name</Nav>
+                        </div>
+                        <div class="collapsible-body" id="event-1-description"><span>Lorem ipsum dolor sit amet.</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header" id="event-2-name">
+                            <!--insert icon here--><i class="material-icons">place</i>Second Event
+                            Name</div>
+                        <div class="collapsible-body" id="event-2-description"><span>Lorem ipsum dolor sit amet.</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header" id="event-3-name">
+                            <!--insert icon here--><i class="material-icons">whatshot</i>Third Event
+                            Name</div>
+                        <div class="collapsible-body" id="event-3-description"><span>Lorem ipsum dolor sit amet.</span>
+                        </div>
+                    </li>
+                </ul>
             </div>
-            <form class="col s12 m6">
-                <div class="row">
-                    <div class="input-field col s12 m6">
-                        <i class="material-icons edit_location"></i>
-                        <input id="zipcode" type="text" class="validate">
-                        <label for="zipcode">Zipcode</label>
-                        <a class="waves-effect waves-light btn">Search</a>
-                    </div>
-            </form>
-        </div>
-    </div>
 
-    <!-- Display: Current weather for next five days -->
-    <div class="row">
-        <!-- Each card represents one day -->
-        <div class="card col m6 s12">
-            <div class="card-image waves-effect waves-block waves-light">
-                <!-- image can be of top 1st event -->
-                <img id="event-image1" class="activator"
-                    src="https://media.npr.org/assets/img/2011/07/07/gettyimages_85052759_wide-91b7876ce2cf4c8e755f18d033027881cb1e72b6-s800-c85.jpg">
-            </div>
-            <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4"><i class="fas fa-sun"></i>Day of Week and
-                    Temp<i class="material-icons right">more_vert</i></span>
-                <p id="event-name1"><a href="#">Sac Rave</a></p>
-            </div>
-            <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">Rave<i class="material-icons right">close</i></span>
-                <p id="event-description1">Here is some more information about this product that is only revealed once clicked on.</p>
+
+            <div class="col sm12 m6">
+                <h3 id="current-date+1">Current Date +1</h3>
+                <ul class="collapsible sm12 m6" id="events-date+1">
+                    <li>
+                        <div class="collapsible-header" id="event-1-name">
+                            <!--insert icon here--><i class="material-icons">filter_drama</i>First Event Name</Nav>
+                        </div>
+                        <div class="collapsible-body" id="event-1-description"><span>Lorem ipsum dolor sit amet.</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header" id="event-2-name">
+                            <!--insert icon here--><i class="material-icons">place</i>Second Event
+                            Name</div>
+                        <div class="collapsible-body" id="event-2-description"><span>Lorem ipsum dolor sit amet.</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header" id="event-3-name">
+                            <!--insert icon here--><i class="material-icons">whatshot</i>Third Event
+                            Name</div>
+                        <div class="collapsible-body" id="event-3-description"><span>Lorem ipsum dolor sit amet.</span>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
-        <div class="card col m6 s12">
-            <div class="card-image waves-effect waves-block waves-light">
-                <!-- image can be of top 1st event -->
-                <img id="event-image2" class="activator"
-                    src="https://media.npr.org/assets/img/2011/07/07/gettyimages_85052759_wide-91b7876ce2cf4c8e755f18d033027881cb1e72b6-s800-c85.jpg">
+
+        <div class="row">
+            <div class="col sm12 m6">
+                <h3 id="current-date+2">Current Date +2</h3>
+                <ul class="collapsible" id="events-date+2">
+                    <li>
+                        <div class="collapsible-header" id="event-1-name">
+                            <!--insert icon here--><i class="material-icons">filter_drama</i>First Event Name</Nav>
+                        </div>
+                        <div class="collapsible-body" id="event-1-description"><span>Lorem ipsum dolor sit amet.</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header" id="event-2-name">
+                            <!--insert icon here--><i class="material-icons">place</i>Second Event
+                            Name</div>
+                        <div class="collapsible-body" id="event-2-description"><span>Lorem ipsum dolor sit amet.</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header" id="event-3-name">
+                            <!--insert icon here--><i class="material-icons">whatshot</i>Third Event
+                            Name</div>
+                        <div class="collapsible-body" id="event-3-description"><span>Lorem ipsum dolor sit amet.</span>
+                        </div>
+                    </li>
+                </ul>
             </div>
-            <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4"><i class="fas fa-sun"></i>Day of Week and
-                    Temp<i class="material-icons right">more_vert</i></span>
-                <p id="event-name2"><a href="#">Sac Rave</a></p>
+
+
+            <div class="col sm12 m6">
+                <h3 id="current-date+3">Current Date +3</h3>
+                <ul class="collapsible sm12 m6" id="events-date+3">
+                    <li>
+                        <div class="collapsible-header" id="event-1-name">
+                            <!--insert icon here--><i class="material-icons">filter_drama</i>First Event Name</Nav>
+                        </div>
+                        <div class="collapsible-body" id="event-1-description"><span>Lorem ipsum dolor sit amet.</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header" id="event-2-name">
+                            <!--insert icon here--><i class="material-icons">place</i>Second Event
+                            Name</div>
+                        <div class="collapsible-body" id="event-2-description"><span>Lorem ipsum dolor sit amet.</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header" id="event-3-name">
+                            <!--insert icon here--><i class="material-icons">whatshot</i>Third Event
+                            Name</div>
+                        <div class="collapsible-body" id="event-3-description"><span>Lorem ipsum dolor sit amet.</span>
+                        </div>
+                    </li>
+                </ul>
             </div>
-            <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">Rave<i class="material-icons right">close</i></span>
-                <p id="event-description2">Here is some more information about this product that is only revealed once clicked on.</p>
+        </div>
+
+        <div class="row">
+            <div class="col sm12 m6">
+                <h3 id="current-date+4">Current Date +4</h3>
+                <ul class="collapsible" id="events-date+4">
+                    <li>
+                        <div class="collapsible-header" id="event-1-name">
+                            <!--insert icon here--><i class="material-icons">filter_drama</i>First Event Name</Nav>
+                        </div>
+                        <div class="collapsible-body" id="event-1-description"><span>Lorem ipsum dolor sit amet.</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header" id="event-2-name">
+                            <!--insert icon here--><i class="material-icons">place</i>Second Event
+                            Name</div>
+                        <div class="collapsible-body" id="event-2-description"><span>Lorem ipsum dolor sit amet.</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header" id="event-3-name">
+                            <!--insert icon here--><i class="material-icons">whatshot</i>Third Event
+                            Name</div>
+                        <div class="collapsible-body" id="event-3-description"><span>Lorem ipsum dolor sit amet.</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="col sm12 m6">
+                <h3 id="current-date+5">Current Date +5</h3>
+                <ul class="collapsible sm12 m6" id="events-date+5">
+                    <li>
+                        <div class="collapsible-header" id="event-1-name">
+                            <!--insert icon here--><i class="material-icons">filter_drama</i>First Event Name</Nav>
+                        </div>
+                        <div class="collapsible-body" id="event-1-description"><span>Lorem ipsum dolor sit amet.</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header" id="event-2-name">
+                            <!--insert icon here--><i class="material-icons">place</i>Second Event
+                            Name</div>
+                        <div class="collapsible-body" id="event-2-description"><span>Lorem ipsum dolor sit amet.</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header" id="event-3-name">
+                            <!--insert icon here--><i class="material-icons">whatshot</i>Third Event
+                            Name</div>
+                        <div class="collapsible-body" id="event-3-description"><span>Lorem ipsum dolor sit amet.</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col sm12 m6">
+                <h3 id="current-date+6">Current Date +6</h3>
+                <ul class="collapsible sm12 m6" id="events-date+6">
+                    <li>
+                        <div class="collapsible-header" id="event-1-name">
+                            <!--insert icon here--><i class="material-icons">filter_drama</i>First Event Name</Nav>
+                        </div>
+                        <div class="collapsible-body" id="event-1-description"><span>Lorem ipsum dolor sit amet.</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header" id="event-2-name">
+                            <!--insert icon here--><i class="material-icons">place</i>Second Event
+                            Name</div>
+                        <div class="collapsible-body" id="event-2-description"><span>Lorem ipsum dolor sit amet.</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header" id="event-3-name">
+                            <!--insert icon here--><i class="material-icons">whatshot</i>Third Event
+                            Name</div>
+                        <div class="collapsible-body" id="event-3-description"><span>Lorem ipsum dolor sit amet.</span>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
 
     </div>
-    <div class="row">
-        <div class="card col m6 s12">
-            <div class="card-image waves-effect waves-block waves-light">
-                <!-- image can be of top 1st event -->
-                <img id="event-image3" class="activator"
-                    src="https://media.npr.org/assets/img/2011/07/07/gettyimages_85052759_wide-91b7876ce2cf4c8e755f18d033027881cb1e72b6-s800-c85.jpg">
-            </div>
-            <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4"><i class="fas fa-sun"></i>Day of Week and
-                    Temp<i class="material-icons right">more_vert</i></span>
-                <p id="event-name3"><a href="#">Sac Rave</a></p>
-            </div>
-            <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">Rave<i class="material-icons right">close</i></span>
-                <p id="event-description3">Here is some more information about this product that is only revealed once clicked on.</p>
-            </div>
-        </div>
-        <div class="card col m6 s12">
-            <div class="card-image waves-effect waves-block waves-light">
-                <!-- image can be of top 1st event -->
-                <img id="event-image4" class="activator"
-                    src="https://media.npr.org/assets/img/2011/07/07/gettyimages_85052759_wide-91b7876ce2cf4c8e755f18d033027881cb1e72b6-s800-c85.jpg">
-            </div>
-            <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4"><i class="fas fa-sun"></i>Day of Week and
-                    Temp<i class="material-icons right">more_vert</i></span>
-                <p id="event-name4"><a href="#">Sac Rave</a></p>
-            </div>
-            <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">Rave<i class="material-icons right">close</i></span>
-                <p id="event-description4">Here is some more information about this product that is only revealed once clicked on.</p>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="card col m6 s12">
-            <div class="card-image waves-effect waves-block waves-light">
-                <!-- image can be of top 1st event -->
-                <img id="event-image5" class="activator"
-                    src="https://media.npr.org/assets/img/2011/07/07/gettyimages_85052759_wide-91b7876ce2cf4c8e755f18d033027881cb1e72b6-s800-c85.jpg">
-            </div>
-            <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4"><i class="fas fa-sun"></i>Day of Week and
-                    Temp<i class="material-icons right">more_vert</i></span>
-                <p id="event-name5"><a href="#">Sac Rave</a></p>
-            </div>
-            <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">Rave<i class="material-icons right">close</i></span>
-                <p id="event-description5">Here is some more information about this product that is only revealed once clicked on.</p>
-            </div>
-        </div>
-    </div>
-
 
     <!-- Javascript -->
     <script src="https://www.gstatic.com/firebasejs/5.0.0/firebase-app.js"></script>
@@ -153,20 +251,18 @@
         firebase.initializeApp(config);
         const database = firebase.database();
     </script>
-    <!-- momenj.js -->
-    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
-    <!-- Materialize -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
     <!-- JQUERY -->
     <script src="https://code.jquery.com/jquery-3.4.0.js"
         integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo=" crossorigin="anonymous"></script>
+    <!-- Materialize -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <!-- Custom JS -->
     <script src="assets/javascript/main.js"></script>
     <!-- Weather API -->
     <script src="assets/javascript/openweather.js"></script>
     <!-- Yelp API -->
     <Script src="assets/javascript/yelp.js"></Script>
-
 </body>
 
 </html>
