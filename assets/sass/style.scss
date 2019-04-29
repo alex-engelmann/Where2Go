@@ -1,0 +1,16 @@
+body{
+    background-image: url(../images/palm-leaf.png);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+$colors: (
+    primary: teal,
+    secondary: grey,
+);
+
+@function color ($color-name) {
+    @return map-get($colors, $color-name)
+};
