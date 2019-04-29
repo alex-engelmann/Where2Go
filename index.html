@@ -16,40 +16,72 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <!-- Custom css -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/sass/style.css">
     <title>Where2Go</title>
 </head>
 
 <body>
     <!-- Navbar -->
-    <nav>
-        <div class="nav-wrapper teal">
-            <a href="#" class="brand-logo center">Where2Go</a>
-        </div>
-    </nav>
+    <div class="container">
+        <nav>
+            <div class="nav-wrapper teal">
+                <a href="#" class="brand-logo center">Where2Go</a>
+            </div>
+        </nav>
+    </div>
     <br>
+    <!-- slider -->
+    <div class="container slider-container">
+        <div class="slider">
+            <ul class="slides">
+                <li>
+                    <img
+                        src="https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1867&q=80" />
+                    <div class="caption left-align">
+                        <h2>Grab a bite.</h2>
+                    </div>
+                </li>
+                <li>
+                    <img
+                        src="https://images.unsplash.com/photo-1493676304819-0d7a8d026dcf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1867&q=80" />
+                    <div class="caption center-align">
+                        <h2>Have fun.</h2>
+                    </div>
+                </li>
+                <li>
+                    <img
+                        src="https://images.unsplash.com/photo-1542326891-50b14105a80b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1949&q=80" />
+                    <div class="caption right-align">
+                        <h2>Spend time with others.</h2>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <br />
     <!-- search bar / landing page -->
-    <section id="searchbar-section" class="section section-search teal darken-1 white-text center">
-        <div class="container">
-            <div class="row">
-                <div class="col s12">
-                    <h3>Find events near you.</h3>
-                    <div class="input-field">
-                        <input type="text" class="white grey-text" id="search" placeholder="enter zipcode">
-                        <button class="btn waves-effect waves-light" type="submit" name="action">Submit
-                            <i class="material-icons right">search</i>
-                        </button>
+    <div class="container search-container">
+        <section id="searchbar-section" class="section section-search teal darken-1 white-text center">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12">
+                        <h3>Find events near you.</h3>
+                        <div class="input-field">
+                            <input type="text" class="white grey-text" id="search" placeholder="enter zipcode">
+                            <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                                <i class="material-icons right">search</i>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
+        </section>
+    </div>
     <!-- Display: Current weather for next seven days -->
-    <div class="container">
+    <div class="container main">
         <div class="row">
             <div class="col sm12 m6">
-                <h3 id="current-date" class="white-text">
+                <h3 id="current-date">
                     <!--insert icon here-->Current Date</h3>
                 <ul class="collapsible" id="events-date">
                     <li>
@@ -117,7 +149,7 @@
 
 
             <div class="col sm12 m6">
-                <h3 id="current-date+1" class="white-text">
+                <h3 id="current-date+1">
                     <!--insert icon here-->Current Date +1</h3>
                 <ul class="collapsible sm12 m6" id="events-date+1">
                     <li>
@@ -186,7 +218,7 @@
 
         <div class="row">
             <div class="col sm12 m6">
-                <h3 id="current-date+2" class="white-text">
+                <h3 id="current-date+2">
                     <!--insert icon here-->Current Date +2</h3>
                 <ul class="collapsible" id="events-date+2">
                     <li>
@@ -254,7 +286,7 @@
 
 
             <div class="col sm12 m6">
-                <h3 id="current-date+3" class="white-text">
+                <h3 id="current-date+3">
                     <!--insert icon here-->Current Date +3</h3>
                 <ul class="collapsible sm12 m6" id="events-date+3">
                     <li>
@@ -323,7 +355,7 @@
 
         <div class="row">
             <div class="col sm12 m6">
-                <h3 id="current-date+4" class="white-text">
+                <h3 id="current-date+4">
                     <!--insert icon here-->Current Date +4</h3>
                 <ul class="collapsible" id="events-date+4">
                     <li>
@@ -391,7 +423,7 @@
 
 
             <div class="col sm12 m6">
-                <h3 id="current-date+5" class="white-text">
+                <h3 id="current-date+5">
                     <!--insert icon here-->Current Date +5</h3>
                 <ul class="collapsible sm12 m6" id="events-date+5">
                     <li>
@@ -460,7 +492,7 @@
 
         <div class="row">
             <div class="col sm12 m6">
-                <h3 id="current-date+6" class="white-text">
+                <h3 id="current-date+6">
                     <!--insert icon here-->Current Date +6</h3>
                 <ul class="collapsible sm12 m6" id="events-date+6">
                     <li>
