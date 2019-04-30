@@ -8,11 +8,11 @@ var getEvents = function () {
     var startUnixTime = moment().unix();
     var endUnixTime = startUnixTime + 604800;
     
-    console.log("unix time: " + startUnixTime);
+    console.log("Start UNIX time: " + startUnixTime);
 
     //Get location from user
     var place = $("#search").val();
-    console.log(place);
+    console.log("Place: " + place);
 
 
     //Set up AJAX for the API call
@@ -23,6 +23,7 @@ var getEvents = function () {
     + "&end_date=" + endUnixTime
     + "&limit=50"
     + "&sort_on=time_start"
+    + "&sort_by=desc"
     
     ;
 
