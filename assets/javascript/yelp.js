@@ -1,7 +1,4 @@
 
-//Set this as global in case anyone else wants event info
-let local_events = []
-
 var getEvents = function () {
 
     //Find out today's date in UNIX time for the API
@@ -18,9 +15,7 @@ var getEvents = function () {
     var queryUrl = "https://api.yelp.com/v3/events?location=" + place
         + "&start_date=" + startUnixTime
         + "&end_date=" + endUnixTime
-        + "&limit=50"
-        + "&sort_on=time_start"
-        + "&sort_by=desc";
+        + "&limit=50";
 
     //Make the Yelp Fusion API call
     $.ajax({
@@ -33,6 +28,8 @@ var getEvents = function () {
     }).then(function (response) {
         // console.log("Returned by server below:")
         // console.log(response);
+
+        let local_events = []
 
         for (let index = 0; index < response.events.length; index++) {
             local_events.push(
@@ -55,6 +52,7 @@ var getEvents = function () {
 
         //Create an object to hold all the data organized by day
 
+    
         const days = {
             0: [],
             1: [],
@@ -64,8 +62,6 @@ var getEvents = function () {
             5: [],
             6: [],
         }
-
-        //TODO make this more efficient using one big for loop, this is not DRY code
         
         for (var dayNumber = 0; dayNumber < 7; dayNumber++) {
             for (let i = 0; i < local_events.length; i++) {
@@ -76,11 +72,44 @@ var getEvents = function () {
         }
         console.log(days);
 
-        $("#event-1-name").text(days[3][0].name);
-        //TODO ask Jim for a better way to do this
-        $("#event-1-description").text(days[3][0].description + "\n" + days[3][0].event_site_url);
+        $("#event-0-name").text(days[0][0].name);
+        $("#event-0-link").attr("href", days[0][0].event_site_url);
+        $("#event-0-description").text(days[0][0].description);
+        $("#event-0-img").attr("src", days[0][0].image_url);
 
-        $("#event-1-image").attr("src", days[3][0].image_url);
+        $("#event-1-name").text(days[1][0].name);
+        $("#event-1-link").attr("href", days[1][0].event_site_url);
+        $("#event-1-description").text(days[1][0].description);
+        $("#event-1-img").attr("src", days[1][0].image_url);
+
+        $("#event-2-name").text(days[2][0].name);
+        $("#event-2-link").attr("href", days[2][0].event_site_url);
+        $("#event-2-description").text(days[2][0].description);
+        $("#event-2-img").attr("src", days[2][0].image_url);
+
+        $("#event-3-name").text(days[3][0].name);
+        $("#event-3-link").attr("href", days[3][0].event_site_url);
+        $("#event-3-description").text(days[3][0].description);
+        $("#event-3-img").attr("src", days[3][0].image_url);
+
+        $("#event-4-name").text(days[4][0].name);
+        $("#event-4-link").attr("href", days[4][0].event_site_url);
+        $("#event-4-description").text(days[4][0].description);
+        $("#event-4-img").attr("src", days[4][0].image_url);
+
+        $("#event-5-name").text(days[5][0].name);
+        $("#event-5-link").attr("href", days[5][0].event_site_url);
+        $("#event-5-description").text(days[5][0].description);
+        $("#event-5-img").attr("src", days[5][0].image_url);
+
+        $("#event-6-name").text(days[6][0].name);
+        $("#event-6-link").attr("href", days[6][0].event_site_url);
+        $("#event-6-description").text(days[6][0].description);
+        $("#event-6-img").attr("src", days[6][0].image_url);
+
+
+
+
 
 
 
@@ -92,12 +121,6 @@ var getEvents = function () {
         // } else {
         //     console.log("moments are different day")
         // }     
-
-        // console.log(response.events["0"].name);
-        // console.log(response.events["0"].description);
-        // console.log(response.events["0"].event_site_url);
-        // console.log(response.events["0"].image_url);
-        // console.log(response.events["0"].time_start);
 
     });
 
