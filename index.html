@@ -10,46 +10,90 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Materialize -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <!-- Sass -->
-
     <!-- Font Awesome (icons) -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <!-- Custom css -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/sass/style.css">
     <title>Where2Go</title>
 </head>
 
 <body>
     <!-- Navbar -->
-    <nav>
-        <div class="nav-wrapper teal">
-            <a href="#" class="brand-logo center">Where2Go</a>
-        </div>
-    </nav>
+    <div class="container">
+        <nav>
+            <div class="nav-wrapper teal">
+                <a href="#" class="brand-logo center">Where2Go</a>
+            </div>
+        </nav>
+    </div>
     <br>
+    <!-- slider -->
+    <div class="container slider-container">
+        <div class="slider">
+            <ul class="slides">
+                <li>
+                    <img
+                        src="https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1867&q=80" />
+                    <div class="caption center-align">
+                        <h3 class="white-text text-darken-3">Grab a bite.</h3>
+                    </div>
+                </li>
+                <li>
+                    <img
+                        src="https://images.unsplash.com/photo-1493676304819-0d7a8d026dcf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1867&q=80" />
+                    <div class="caption left-align">
+                        <h3 class="white-text text-darken-3">Have fun.</h3>
+                    </div>
+                </li>
+                <li>
+                    <img
+                        src="https://images.unsplash.com/photo-1542326891-50b14105a80b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1949&q=80" />
+                    <div class="caption right-align">
+                        <h3 class="white-text text-darken-3">Spend time with others.</h3>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <br />
     <!-- search bar / landing page -->
-    <section id="searchbar-section" class="section section-search teal darken-1 white-text center">
-        <div class="container">
-            <div class="row">
-                <div class="col s12">
-                    <h3>Find events near you.</h3>
-                    <div class="input-field">
-                        <input type="text" class="white grey-text" id="search" placeholder="enter zipcode">
-                        <button class="btn waves-effect waves-light" type="submit" name="action">Submit
-                            <i class="material-icons right">search</i>
-                        </button>
+    <div class="container search-container">
+        <section id="searchbar-section" class="section section-search teal darken-1 white-text center">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12">
+                        <h3>Find events near you.</h3>
+                        <form action="input">
+                            <div class="input-field">
+                                <input type="text" class="white grey-text text-darken-2" id="search"
+                                    placeholder="enter zipcode">
+                                <button id="search-btn" class="btn waves-effect waves-light" type="submit"
+                                    name="action">Submit
+                                    <i class="material-icons right">search</i>
+                                </button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
+        </section>
+    </div>
+    <!-- New search button -->
+    <div class="section section-new-search">
+        <div class="container">
+            <button id="new-search" class="btn waves-effect waves-light" type="submit" name="action">New Search
+            </button>
         </div>
-    </section>
-
+    </div>
     <!-- Display: Current weather for next seven days -->
-    <div class="container">
+    <div class="container main">
+
+        <!-- New Row -->
         <div class="row">
+            <!-- New Day -->
             <div class="col sm12 m6">
-                <h3 id="current-date" class="white-text">
+                <h3 id="current-date">
                     <!--insert icon here-->Current Date</h3>
                 <ul class="collapsible" id="events-date">
                     <li>
@@ -61,51 +105,12 @@
                                 <div class="card-image">
                                     <img
                                         src="https://static1.squarespace.com/static/54219d18e4b0462bd0f65cc1/t/57f2c5c0893fc0e9a17df3fb/1475528133591/">
-                                    <span class="card-title">Card Title</span>
-                                    <a class="btn-floating halfway-fab waves-effect waves-light red"><i
+                                    <!--TODO: Insert link to event here. -->
+                                    <a id="event-1-link"
+                                        class="btn-floating halfway-fab waves-effect waves-light red"><i
                                             class="material-icons">add</i></a>
                                 </div>
                                 <div class="card-content" id="event-1-description">
-                                    <p>I am a very simple card. I am good at containing small bits of information. I am
-                                        convenient because I require little markup to use effectively.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="collapsible-header" id="event-2-name">
-                            Second Event Name
-                        </div>
-                        <div class="collapsible-body">
-                            <div class="card">
-                                <div class="card-image">
-                                    <img
-                                        src="https://static1.squarespace.com/static/54219d18e4b0462bd0f65cc1/t/57f2c5c0893fc0e9a17df3fb/1475528133591/">
-                                    <span class="card-title">Card Title</span>
-                                    <a class="btn-floating halfway-fab waves-effect waves-light red"><i
-                                            class="material-icons">add</i></a>
-                                </div>
-                                <div class="card-content" id="event-2-description">
-                                    <p>I am a very simple card. I am good at containing small bits of information. I am
-                                        convenient because I require little markup to use effectively.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="collapsible-header" id="event-3-name">
-                            Third Event Name
-                        </div>
-                        <div class="collapsible-body">
-                            <div class="card">
-                                <div class="card-image">
-                                    <img
-                                        src="https://static1.squarespace.com/static/54219d18e4b0462bd0f65cc1/t/57f2c5c0893fc0e9a17df3fb/1475528133591/">
-                                    <span class="card-title">Card Title</span>
-                                    <a class="btn-floating halfway-fab waves-effect waves-light red"><i
-                                            class="material-icons">add</i></a>
-                                </div>
-                                <div class="card-content" id="event-3-description">
                                     <p>I am a very simple card. I am good at containing small bits of information. I am
                                         convenient because I require little markup to use effectively.</p>
                                 </div>
@@ -115,11 +120,11 @@
                 </ul>
             </div>
 
-
+            <!-- New Day -->
             <div class="col sm12 m6">
-                <h3 id="current-date1" class="white-text">
-                    <!--insert icon here--><i class="material-icons">filter_drama</i>Current Date +1</h3>
-                <ul class="collapsible sm12 m6" id="events-date+1">
+                <h3 id="current-date1">
+                    <!--insert icon here-->Current Date +1</h3>
+                <ul class="collapsible sm12 m6" id="events-date1">
                     <li>
                         <div class="collapsible-header" id="event-1-name">
                             First Event Name
@@ -129,51 +134,11 @@
                                 <div class="card-image">
                                     <img
                                         src="https://static1.squarespace.com/static/54219d18e4b0462bd0f65cc1/t/57f2c5c0893fc0e9a17df3fb/1475528133591/">
-                                    <span class="card-title">Card Title</span>
-                                    <a class="btn-floating halfway-fab waves-effect waves-light red"><i
-                                            class="material-icons">add</i></a>
+                                    <!--TODO: Insert link to event here. -->
+                                    <a class="btn-floating halfway-fab waves-effect waves-light red"
+                                        id="event-1-link"><i class="material-icons">add</i></a>
                                 </div>
                                 <div class="card-content" id="event-1-description">
-                                    <p>I am a very simple card. I am good at containing small bits of information. I am
-                                        convenient because I require little markup to use effectively.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="collapsible-header" id="event-2-name">
-                            Second Event Name
-                        </div>
-                        <div class="collapsible-body">
-                            <div class="card">
-                                <div class="card-image">
-                                    <img
-                                        src="https://static1.squarespace.com/static/54219d18e4b0462bd0f65cc1/t/57f2c5c0893fc0e9a17df3fb/1475528133591/">
-                                    <span class="card-title">Card Title</span>
-                                    <a class="btn-floating halfway-fab waves-effect waves-light red"><i
-                                            class="material-icons">add</i></a>
-                                </div>
-                                <div class="card-content" id="event-2-description">
-                                    <p>I am a very simple card. I am good at containing small bits of information. I am
-                                        convenient because I require little markup to use effectively.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="collapsible-header" id="event-3-name">
-                            Third Event Name
-                        </div>
-                        <div class="collapsible-body">
-                            <div class="card">
-                                <div class="card-image">
-                                    <img
-                                        src="https://static1.squarespace.com/static/54219d18e4b0462bd0f65cc1/t/57f2c5c0893fc0e9a17df3fb/1475528133591/">
-                                    <span class="card-title">Card Title</span>
-                                    <a class="btn-floating halfway-fab waves-effect waves-light red"><i
-                                            class="material-icons">add</i></a>
-                                </div>
-                                <div class="card-content" id="event-3-description">
                                     <p>I am a very simple card. I am good at containing small bits of information. I am
                                         convenient because I require little markup to use effectively.</p>
                                 </div>
@@ -184,11 +149,13 @@
             </div>
         </div>
 
+        <!-- New Row -->
         <div class="row">
+            <!-- New Day -->
             <div class="col sm12 m6">
-                <h3 id="current-date2" class="white-text">
-                    <!--insert icon here--><i class="material-icons">filter_drama</i>Current Date +2</h3>
-                <ul class="collapsible" id="events-date+2">
+                <h3 id="current-date2">
+                    <!--insert icon here-->Current Date +2</h3>
+                <ul class="collapsible" id="events-date2">
                     <li>
                         <div class="collapsible-header" id="event-1-name">
                             First Event Name
@@ -196,53 +163,13 @@
                         <div class="collapsible-body">
                             <div class="card">
                                 <div class="card-image">
-                                    <img
+                                    <img id="event1-img"
                                         src="https://static1.squarespace.com/static/54219d18e4b0462bd0f65cc1/t/57f2c5c0893fc0e9a17df3fb/1475528133591/">
-                                    <span class="card-title">Card Title</span>
-                                    <a class="btn-floating halfway-fab waves-effect waves-light red"><i
-                                            class="material-icons">add</i></a>
+                                    <!--TODO: Insert link to event here. -->
+                                    <a class="btn-floating halfway-fab waves-effect waves-light red"
+                                        id="event-1-link"><i class="material-icons">add</i></a>
                                 </div>
                                 <div class="card-content" id="event-1-description">
-                                    <p>I am a very simple card. I am good at containing small bits of information. I am
-                                        convenient because I require little markup to use effectively.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="collapsible-header" id="event-2-name">
-                            Second Event Name
-                        </div>
-                        <div class="collapsible-body">
-                            <div class="card">
-                                <div class="card-image">
-                                    <img
-                                        src="https://static1.squarespace.com/static/54219d18e4b0462bd0f65cc1/t/57f2c5c0893fc0e9a17df3fb/1475528133591/">
-                                    <span class="card-title">Card Title</span>
-                                    <a class="btn-floating halfway-fab waves-effect waves-light red"><i
-                                            class="material-icons">add</i></a>
-                                </div>
-                                <div class="card-content" id="event-2-description">
-                                    <p>I am a very simple card. I am good at containing small bits of information. I am
-                                        convenient because I require little markup to use effectively.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="collapsible-header" id="event-3-name">
-                            Third Event Name
-                        </div>
-                        <div class="collapsible-body">
-                            <div class="card">
-                                <div class="card-image">
-                                    <img
-                                        src="https://static1.squarespace.com/static/54219d18e4b0462bd0f65cc1/t/57f2c5c0893fc0e9a17df3fb/1475528133591/">
-                                    <span class="card-title">Card Title</span>
-                                    <a class="btn-floating halfway-fab waves-effect waves-light red"><i
-                                            class="material-icons">add</i></a>
-                                </div>
-                                <div class="card-content" id="event-3-description">
                                     <p>I am a very simple card. I am good at containing small bits of information. I am
                                         convenient because I require little markup to use effectively.</p>
                                 </div>
@@ -252,11 +179,11 @@
                 </ul>
             </div>
 
-
+            <!-- New Day -->
             <div class="col sm12 m6">
-                <h3 id="current-date3" class="white-text">
-                    <!--insert icon here--><i class="material-icons">filter_drama</i>Current Date +3</h3>
-                <ul class="collapsible sm12 m6" id="events-date+3">
+                <h3 id="current-date3">
+                    <!--insert icon here-->Current Date +3</h3>
+                <ul class="collapsible sm12 m6" id="events-date3">
                     <li>
                         <div class="collapsible-header" id="event-1-name">
                             First Event Name
@@ -264,53 +191,13 @@
                         <div class="collapsible-body">
                             <div class="card">
                                 <div class="card-image">
-                                    <img
+                                    <img id="event1-img"
                                         src="https://static1.squarespace.com/static/54219d18e4b0462bd0f65cc1/t/57f2c5c0893fc0e9a17df3fb/1475528133591/">
-                                    <span class="card-title">Card Title</span>
-                                    <a class="btn-floating halfway-fab waves-effect waves-light red"><i
-                                            class="material-icons">add</i></a>
+                                    <!--TODO: Insert link to event here. -->
+                                    <a class="btn-floating halfway-fab waves-effect waves-light red"
+                                        id="event-1-link"><i class="material-icons">add</i></a>
                                 </div>
                                 <div class="card-content" id="event-1-description">
-                                    <p>I am a very simple card. I am good at containing small bits of information. I am
-                                        convenient because I require little markup to use effectively.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="collapsible-header" id="event-2-name">
-                            Second Event Name
-                        </div>
-                        <div class="collapsible-body">
-                            <div class="card">
-                                <div class="card-image">
-                                    <img
-                                        src="https://static1.squarespace.com/static/54219d18e4b0462bd0f65cc1/t/57f2c5c0893fc0e9a17df3fb/1475528133591/">
-                                    <span class="card-title">Card Title</span>
-                                    <a class="btn-floating halfway-fab waves-effect waves-light red"><i
-                                            class="material-icons">add</i></a>
-                                </div>
-                                <div class="card-content" id="event-2-description">
-                                    <p>I am a very simple card. I am good at containing small bits of information. I am
-                                        convenient because I require little markup to use effectively.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="collapsible-header" id="event-3-name">
-                            Third Event Name
-                        </div>
-                        <div class="collapsible-body">
-                            <div class="card">
-                                <div class="card-image">
-                                    <img
-                                        src="https://static1.squarespace.com/static/54219d18e4b0462bd0f65cc1/t/57f2c5c0893fc0e9a17df3fb/1475528133591/">
-                                    <span class="card-title">Card Title</span>
-                                    <a class="btn-floating halfway-fab waves-effect waves-light red"><i
-                                            class="material-icons">add</i></a>
-                                </div>
-                                <div class="card-content" id="event-3-description">
                                     <p>I am a very simple card. I am good at containing small bits of information. I am
                                         convenient because I require little markup to use effectively.</p>
                                 </div>
@@ -321,11 +208,13 @@
             </div>
         </div>
 
+        <!-- New Row -->
         <div class="row">
+            <!-- New Day -->
             <div class="col sm12 m6">
-                <h3 id="current-date4" class="white-text">
-                    <!--insert icon here--><i class="material-icons">filter_drama</i>Current Date +4</h3>
-                <ul class="collapsible" id="events-date+4">
+                <h3 id="current-date4">
+                    <!--insert icon here-->Current Date +4</h3>
+                <ul class="collapsible" id="events-date4">
                     <li>
                         <div class="collapsible-header" id="event-1-name">
                             First Event Name
@@ -333,53 +222,13 @@
                         <div class="collapsible-body">
                             <div class="card">
                                 <div class="card-image">
-                                    <img
+                                    <img id="event1-img"
                                         src="https://static1.squarespace.com/static/54219d18e4b0462bd0f65cc1/t/57f2c5c0893fc0e9a17df3fb/1475528133591/">
-                                    <span class="card-title">Card Title</span>
-                                    <a class="btn-floating halfway-fab waves-effect waves-light red"><i
-                                            class="material-icons">add</i></a>
+                                    <!--TODO: Insert link to event here. -->
+                                    <a class="btn-floating halfway-fab waves-effect waves-light red"
+                                        id="event-1-link"><i class="material-icons">add</i></a>
                                 </div>
                                 <div class="card-content" id="event-1-description">
-                                    <p>I am a very simple card. I am good at containing small bits of information. I am
-                                        convenient because I require little markup to use effectively.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="collapsible-header" id="event-2-name">
-                            Second Event Name
-                        </div>
-                        <div class="collapsible-body">
-                            <div class="card">
-                                <div class="card-image">
-                                    <img
-                                        src="https://static1.squarespace.com/static/54219d18e4b0462bd0f65cc1/t/57f2c5c0893fc0e9a17df3fb/1475528133591/">
-                                    <span class="card-title">Card Title</span>
-                                    <a class="btn-floating halfway-fab waves-effect waves-light red"><i
-                                            class="material-icons">add</i></a>
-                                </div>
-                                <div class="card-content" id="event-2-description">
-                                    <p>I am a very simple card. I am good at containing small bits of information. I am
-                                        convenient because I require little markup to use effectively.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="collapsible-header" id="event-3-name">
-                            Third Event Name
-                        </div>
-                        <div class="collapsible-body">
-                            <div class="card">
-                                <div class="card-image">
-                                    <img
-                                        src="https://static1.squarespace.com/static/54219d18e4b0462bd0f65cc1/t/57f2c5c0893fc0e9a17df3fb/1475528133591/">
-                                    <span class="card-title">Card Title</span>
-                                    <a class="btn-floating halfway-fab waves-effect waves-light red"><i
-                                            class="material-icons">add</i></a>
-                                </div>
-                                <div class="card-content" id="event-3-description">
                                     <p>I am a very simple card. I am good at containing small bits of information. I am
                                         convenient because I require little markup to use effectively.</p>
                                 </div>
@@ -389,11 +238,11 @@
                 </ul>
             </div>
 
-
+            <!-- New Day -->
             <div class="col sm12 m6">
-                <h3 id="current-date5" class="white-text">
-                    <!--insert icon here--><i class="material-icons">filter_drama</i>Current Date +5</h3>
-                <ul class="collapsible sm12 m6" id="events-date+5">
+                <h3 id="current-date5">
+                    <!--insert icon here-->Current Date +5</h3>
+                <ul class="collapsible sm12 m6" id="events-date5">
                     <li>
                         <div class="collapsible-header" id="event-1-name">
                             First Event Name
@@ -401,53 +250,13 @@
                         <div class="collapsible-body">
                             <div class="card">
                                 <div class="card-image">
-                                    <img
+                                    <img id="event1-img"
                                         src="https://static1.squarespace.com/static/54219d18e4b0462bd0f65cc1/t/57f2c5c0893fc0e9a17df3fb/1475528133591/">
-                                    <span class="card-title">Card Title</span>
-                                    <a class="btn-floating halfway-fab waves-effect waves-light red"><i
-                                            class="material-icons">add</i></a>
+                                    <!--TODO: Insert link to event here. -->
+                                    <a class="btn-floating halfway-fab waves-effect waves-light red"
+                                        id="event-1-link"><i class="material-icons">add</i></a>
                                 </div>
                                 <div class="card-content" id="event-1-description">
-                                    <p>I am a very simple card. I am good at containing small bits of information. I am
-                                        convenient because I require little markup to use effectively.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="collapsible-header" id="event-2-name">
-                            Second Event Name
-                        </div>
-                        <div class="collapsible-body">
-                            <div class="card">
-                                <div class="card-image">
-                                    <img
-                                        src="https://static1.squarespace.com/static/54219d18e4b0462bd0f65cc1/t/57f2c5c0893fc0e9a17df3fb/1475528133591/">
-                                    <span class="card-title">Card Title</span>
-                                    <a class="btn-floating halfway-fab waves-effect waves-light red"><i
-                                            class="material-icons">add</i></a>
-                                </div>
-                                <div class="card-content" id="event-2-description">
-                                    <p>I am a very simple card. I am good at containing small bits of information. I am
-                                        convenient because I require little markup to use effectively.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="collapsible-header" id="event-3-name">
-                            Third Event Name
-                        </div>
-                        <div class="collapsible-body">
-                            <div class="card">
-                                <div class="card-image">
-                                    <img
-                                        src="https://static1.squarespace.com/static/54219d18e4b0462bd0f65cc1/t/57f2c5c0893fc0e9a17df3fb/1475528133591/">
-                                    <span class="card-title">Card Title</span>
-                                    <a class="btn-floating halfway-fab waves-effect waves-light red"><i
-                                            class="material-icons">add</i></a>
-                                </div>
-                                <div class="card-content" id="event-3-description">
                                     <p>I am a very simple card. I am good at containing small bits of information. I am
                                         convenient because I require little markup to use effectively.</p>
                                 </div>
@@ -458,11 +267,13 @@
             </div>
         </div>
 
+        <!-- New Row -->
         <div class="row">
+            <!-- New Day -->
             <div class="col sm12 m6">
-                <h3 id="current-date6" class="white-text">
-                    <!--insert icon here--><i class="material-icons">filter_drama</i>Current Date +6</h3>
-                <ul class="collapsible sm12 m6" id="events-date+6">
+                <h3 id="current-date6">
+                    <!--insert icon here-->Current Date +6</h3>
+                <ul class="collapsible sm12 m6" id="events-date6">
                     <li>
                         <div class="collapsible-header" id="event-1-name">
                             First Event Name
@@ -470,53 +281,13 @@
                         <div class="collapsible-body">
                             <div class="card">
                                 <div class="card-image">
-                                    <img
+                                    <img id="event1-img"
                                         src="https://static1.squarespace.com/static/54219d18e4b0462bd0f65cc1/t/57f2c5c0893fc0e9a17df3fb/1475528133591/">
-                                    <span class="card-title">Card Title</span>
-                                    <a class="btn-floating halfway-fab waves-effect waves-light red"><i
-                                            class="material-icons">add</i></a>
+                                    <!--TODO: Insert link to event here. -->
+                                    <a class="btn-floating halfway-fab waves-effect waves-light red"
+                                        id="event-1-link"><i class="material-icons">add</i></a>
                                 </div>
                                 <div class="card-content" id="event-1-description">
-                                    <p>I am a very simple card. I am good at containing small bits of information. I am
-                                        convenient because I require little markup to use effectively.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="collapsible-header" id="event-2-name">
-                            Second Event Name
-                        </div>
-                        <div class="collapsible-body">
-                            <div class="card">
-                                <div class="card-image">
-                                    <img
-                                        src="https://static1.squarespace.com/static/54219d18e4b0462bd0f65cc1/t/57f2c5c0893fc0e9a17df3fb/1475528133591/">
-                                    <span class="card-title">Card Title</span>
-                                    <a class="btn-floating halfway-fab waves-effect waves-light red"><i
-                                            class="material-icons">add</i></a>
-                                </div>
-                                <div class="card-content" id="event-2-description">
-                                    <p>I am a very simple card. I am good at containing small bits of information. I am
-                                        convenient because I require little markup to use effectively.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="collapsible-header" id="event-3-name">
-                            Third Event Name
-                        </div>
-                        <div class="collapsible-body">
-                            <div class="card">
-                                <div class="card-image">
-                                    <img
-                                        src="https://static1.squarespace.com/static/54219d18e4b0462bd0f65cc1/t/57f2c5c0893fc0e9a17df3fb/1475528133591/">
-                                    <span class="card-title">Card Title</span>
-                                    <a class="btn-floating halfway-fab waves-effect waves-light red"><i
-                                            class="material-icons">add</i></a>
-                                </div>
-                                <div class="card-content" id="event-3-description">
                                     <p>I am a very simple card. I am good at containing small bits of information. I am
                                         convenient because I require little markup to use effectively.</p>
                                 </div>
