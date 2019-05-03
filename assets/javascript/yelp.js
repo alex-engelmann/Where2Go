@@ -72,60 +72,8 @@ var getEvents = function () {
                 $("#event-" + day + "-link").attr("href", days[day][0].event_site_url);
                 $("#event-" + day + "-description").text(days[day][0].description);
                 $("#event-" + day + "-img").attr("src", days[day][0].image_url);
-                console.log(day);
             }
         }
-
-        // $("#event-0-name").text(days[0][0].name);
-        // $("#event-0-link").attr("href", days[0][0].event_site_url);
-        // $("#event-0-description").text(days[0][0].description);
-        // $("#event-0-img").attr("src", days[0][0].image_url);
-
-        // $("#event-1-name").text(days[1][0].name);
-        // $("#event-1-link").attr("href", days[1][0].event_site_url);
-        // $("#event-1-description").text(days[1][0].description);
-        // $("#event-1-img").attr("src", days[1][0].image_url);
-
-        // // $("#event-2-name").text(days[2][0].name);
-        // // $("#event-2-link").attr("href", days[2][0].event_site_url);
-        // // $("#event-2-description").text(days[2][0].description);
-        // // $("#event-2-img").attr("src", days[2][0].image_url);
-
-        // $("#event-3-name").text(days[3][0].name);
-        // $("#event-3-link").attr("href", days[3][0].event_site_url);
-        // $("#event-3-description").text(days[3][0].description);
-        // $("#event-3-img").attr("src", days[3][0].image_url);
-
-        // $("#event-4-name").text(days[4][0].name);
-        // $("#event-4-link").attr("href", days[4][0].event_site_url);
-        // $("#event-4-description").text(days[4][0].description);
-        // $("#event-4-img").attr("src", days[4][0].image_url);
-
-        // // $("#event-5-name").text(days[5][0].name);
-        // // $("#event-5-link").attr("href", days[5][0].event_site_url);
-        // // $("#event-5-description").text(days[5][0].description);
-        // // $("#event-5-img").attr("src", days[5][0].image_url);
-
-        // // $("#event-6-name").text(days[6][0].name);
-        // // $("#event-6-link").attr("href", days[6][0].event_site_url);
-        // // $("#event-6-description").text(days[6][0].description);
-        // // $("#event-6-img").attr("src", days[6][0].image_url);
-
-
-
-
-
-
-
-        //This is old testing code -
-        //TODO delete this when finished
-
-        // if (moment('2010-01-01').isSame('2010-01-03', 'day')) {
-        //     console.log("moments are same day");
-        // } else {
-        //     console.log("moments are different day")
-        // }     
-
     });
 
 }
