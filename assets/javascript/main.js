@@ -44,13 +44,17 @@ function refreshPage(){
     window.location.reload();
 }
 
-// firebase start 
-$(".btn").on("click", function (e) {
+// **** Start of Firebase ****
 
+
+$(".btn").on("click", function (e) {
     e.preventDefault();
 
     var currentZip = parseInt($("#search").val())
-    var newCount = 1;
+    var newCount;
+
+
+
 
     database.ref("zipcode").once("value", function (snapshot) {
 
@@ -63,8 +67,11 @@ $(".btn").on("click", function (e) {
             })
             return;
         }
+
         else {
-            console.log("else is running");
+            database.ref("zipcode/" + currentZip).set({
+                count: 1
+            })
         }
 
     })
