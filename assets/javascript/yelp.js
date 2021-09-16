@@ -10,7 +10,8 @@ var getEvents = function () {
     var place = $("#search").val();
 
     //Set up variables for API call
-    var apiKey = "19PWD0Q8SBucz7O5e8TiQLaoKcsZPFA8-tHMDxmJx_gd-nI4gecHyB6s_Cb3Y5A5HQik0uaWr35Z21PSXvJW-TIA1zr82giN7soQckjYi71Cd45Cw-4MEtP72bS_XHYx";
+    var apiKey = "REDACTED";
+    //was getting a 403 error anyways, will just remove my API key from here
     const proxyUrl = "https://cors-anywhere.herokuapp.com/";
     var queryUrl = "https://api.yelp.com/v3/events?location=" + place
         + "&start_date=" + startUnixTime
